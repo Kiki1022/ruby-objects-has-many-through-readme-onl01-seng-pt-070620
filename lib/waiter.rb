@@ -16,11 +16,11 @@ class Waiter
   end
     
   def new_meal(customer, total, tip = 0) 
-    Meal.new(self, customer, total, tip)
+    Meal.new(self, customer, total, tip) #creats Waiter instance with associated attr 
   end
   
   def meals
-    Meal.all.select {|m| m.waiter == self}
+    Meal.all.select {|m| m.waiter == self} #puts Meal class in array associated with waiter (m.waiter == self)
   end  
   
   def best_tipper 
