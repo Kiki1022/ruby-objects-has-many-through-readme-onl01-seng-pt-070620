@@ -25,7 +25,7 @@ class Customer
   
   def waiters
     binding.pry
-    Waiter.all.select {|w| w.customer ==self}
+    meals.all.select {|w| w.waiter ==self}
   end
 
 
