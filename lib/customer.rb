@@ -20,7 +20,7 @@ class Customer
   end
   
   def meals
-    #binding.pry
+    binding.pry
   end
 
 
