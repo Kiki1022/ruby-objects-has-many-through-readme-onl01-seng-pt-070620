@@ -24,9 +24,9 @@ class Waiter
   end  
   
   def best_tipper 
-    meals2 = meals.sort_by {|t| t.tip}
-    best_tip = meals2[-1]
-    best_tip.customer
+    meals2 = meals.sort_by {|t| t.tip} #sorts array by tip
+    best_tip = meals2[-1] #returns object and saves in new variable
+    best_tip.customer #calling customer of this object
   end
   
 end
