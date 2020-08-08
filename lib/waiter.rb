@@ -24,12 +24,9 @@ class Waiter
   end  
   
   def best_tipper 
-    #binding.pry
   meals2 = meals.sort_by {|t| t.tip}
-  meals[-1]
+    meals2[-1]
   #binding.pry
-  
- 
   end
   
 end
