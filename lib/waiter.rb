@@ -22,4 +22,8 @@ class Waiter
   def meals
     Meal.all.select {|m| m.waiter == self}
   end  
+  
+  def best_tipper
+  #binding.pry
+end
 end
