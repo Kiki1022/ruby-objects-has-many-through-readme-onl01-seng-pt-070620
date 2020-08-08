@@ -24,7 +24,8 @@ class Waiter
   end  
   
   def best_tipper
-  meals.collect {|t| t.tip}
+  #meals.collect {|t| t.tip}
+  binding.pry
   end
   
 end
