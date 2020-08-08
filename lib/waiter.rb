@@ -23,10 +23,12 @@ class Waiter
     Meal.all.select {|m| m.waiter == self}
   end  
   
-  def best_tipper
+  def best_tipper 
+    #binding.pry
   meals.sort_by {|t| t.tip}
+  binding.pry
   
-  #binding.pry
+ 
   end
   
 end
