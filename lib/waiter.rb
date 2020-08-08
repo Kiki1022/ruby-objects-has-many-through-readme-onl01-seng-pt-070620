@@ -24,9 +24,9 @@ class Waiter
   end  
   
   def best_tipper 
-  meals2 = meals.sort_by {|t| t.tip}
+    meals2 = meals.sort_by {|t| t.tip}
     best_tip = meals2[-1]
-best_tip.customer
+    best_tip.customer
   end
   
 end
