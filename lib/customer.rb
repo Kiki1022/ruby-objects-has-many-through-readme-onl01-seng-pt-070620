@@ -22,7 +22,7 @@ class Customer
   def meals
     #binding.pry
     Meal.all.select {|m| m.customer ==self}
-    Meal.all.count
+    self.Meal.length
   end
 
 
