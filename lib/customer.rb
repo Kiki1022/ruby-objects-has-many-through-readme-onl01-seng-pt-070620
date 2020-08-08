@@ -20,8 +20,9 @@ class Customer
   end
   
   def meals
-    binding.pry
-   
+    #binding.pry
+    Meal.all.select {|m| m.customer ==self}
+    Meal.all.count
   end
 
 
